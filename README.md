@@ -139,6 +139,7 @@ AgenticSecurity/
 │   ├── register.yaml    # machine-readable source register (pinned versions, hashes)
 │   └── intake/          # validation scripts (schema, ID checks, rule compilers)
 ├── tools/               # MCP server configs / wrappers
+│   └── github-hardening/  # baseline script + rulesets for this and other repos
 ├── evals/               # golden inputs + expected outputs, scoring scripts
 └── templates/           # output templates (threat model, HLD, LLD, ADR, finding)
 ```
