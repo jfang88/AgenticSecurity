@@ -1,6 +1,6 @@
 # Agentic Security
 
-> **Status:** Draft v0.2 · Planning phase · Owner: James
+> **Status:** Draft v0.3 · Planning phase · Owner: James
 > A set of AI agents that help security architects and engineers with threat modelling, architecture review, security documentation, detection engineering, supply-chain intake and automated security testing.
 
 ---
@@ -181,9 +181,25 @@ agentic-security/
 
 ---
 
-## 10. Change log
+## 10. Licence
+
+This project is built in public under two licences:
+
+| What | Licence | File |
+|------|---------|------|
+| **Code**: agents, prompts, tool configs, scripts, generators, eval harness | [Apache License 2.0](LICENSE) | `LICENSE` |
+| **Documentation**: everything in `docs/`, this README, templates, diagrams | [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE-docs) | `LICENSE-docs` |
+
+You may use, adapt and share both, including commercially, as long as you give attribution.
+
+**Third-party material keeps its own terms.** Framework names and IDs (MITRE ATT&CK, ATLAS, CAPEC, CWE; OWASP; NIST) are cited for reference only. Any knowledge-base content pulled from external sources is governed by the licence recorded for it in [knowledge-sources.md](docs/knowledge-sources.md), not by this repo's licences.
+
+---
+
+## 11. Change log
 
 | Version | Date | Change |
 |---------|------|--------|
 | 0.1 | 2026-11-25 | Initial README and planning document set |
 | 0.2 | 2026-11-25 | Linked the copilot-threat-model-agent v2.3 prototype as A1; adopted its TM-01/TM-02 method project-wide; added D7 |
+| 0.3 | 2026-11-25 | Added licences: Apache-2.0 (code), CC BY 4.0 (docs) |
