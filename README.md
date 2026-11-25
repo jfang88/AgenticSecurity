@@ -1,6 +1,6 @@
 # Agentic Security
 
-> **Status:** Draft v0.3 · Planning phase · Owner: James
+> **Status:** Draft v0.4 · Planning phase · Owner: James
 > A set of AI agents that help security architects and engineers with threat modelling, architecture review, security documentation, detection engineering, supply-chain intake and automated security testing.
 
 ---
@@ -122,7 +122,7 @@ Agents draw on a **tiered** corpus. Full register in [docs/knowledge-sources.md]
 ## 6. Repository layout (proposed)
 
 ```text
-agentic-security/
+AgenticSecurity/
 ├── README.md
 ├── docs/
 │   ├── agent-catalogue.md
@@ -167,7 +167,7 @@ agentic-security/
 | D2 | Agent framework | MCP + Claude Agent SDK · Google ADK · Copilot Studio · LangGraph | Prefer something with first-class tool scoping and tracing |
 | D3 | Data classification allowed in prompts | Public only · Internal · Confidential with controls | Architecture docs are likely *Confidential* |
 | D4 | Vector store / KB hosting | Self-hosted (pgvector, Qdrant, OpenSearch) · managed (Vertex AI Search) | Self-hosted first |
-| D5 | Where the repo lives | Personal GitHub · corporate GitLab | Corporate content should not sit in a personal repo |
+| D5 | Where the repo lives | **Decided (2026-11-25):** public personal GitHub, [`jfang88/AgenticSecurity`](https://github.com/jfang88/AgenticSecurity) | Privately owned work, built in public. No employer-confidential content goes in this repo; organisation-specific T0 material stays in internal stores |
 | D6 | Relationship to [`copilot-threat-model-agent`](https://github.com/jfang88/copilot-threat-model-agent) | Keep as A1's own repo and reference it from here · fold into this repo | It's a mature v2.3 prototype; keeping it separate and versioned is the low-friction default |
 | D7 | Generator hosting for A1 | Code interpreter (current) · Azure Function called as a Copilot Studio action · container behind the agent gateway | The prototype's README already names the Azure Function route as the predictable option |
 
@@ -203,3 +203,4 @@ You may use, adapt and share both, including commercially, as long as you give a
 | 0.1 | 2026-11-25 | Initial README and planning document set |
 | 0.2 | 2026-11-25 | Linked the copilot-threat-model-agent v2.3 prototype as A1; adopted its TM-01/TM-02 method project-wide; added D7 |
 | 0.3 | 2026-11-25 | Added licences: Apache-2.0 (code), CC BY 4.0 (docs) |
+| 0.4 | 2026-11-25 | Repo published to GitHub; D5 decided |
